@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"    
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    
+    <h:body>
+    
+    	<ui:composition template="/template/template.xhtml">
+ 
+ 			<ui:define name="content">
+
+				<div id="div-content-content" class="div-content-content">
+				
+					<center>
+					<div class="div-how-stuff-works">
+					
+						<h1>Como funciona?</h1>
+						
+						<br/>
+											
+						<div style="width: 310px; float: left; margin-right: 20px; border: 0px solid red; text-align: justify;">
+						
+						<h3>1. Conte-nos o que você precisa comprar</h3>
+						
+						<h:outputText value="Diga qual é o produto que você procura e o seu cep. Essas informações vão nos ajudar a encontrar as melhores lojas para você." styleClass="text-how-stuff-works"/>
+					
+						</div>
+					
+					
+						<div style="width: 310px; float: left; margin-right: 20px; border: 0px solid red; text-align: justify;">
+					
+						<h3>2. Encontramos até 7 lojas ai perto de você</h3>
+						
+						<h:outputText value="Nós pesquisamos até 7 lojas próximas a sua região e enviamos sua necessidade para cada uma." styleClass="text-how-stuff-works"/>
+					
+						</div>
+						
+						
+						<div style="width: 310px; float: left; margin-right: 20px; border: 0px solid red; text-align: justify;">
+					
+						<h3>3. Compare e compre com a melhor loja</h3>
+						
+						<h:outputText value="Você compara os preços e condições e compra com a melhor loja." styleClass="text-how-stuff-works"/>
+						
+						</div>
+			
+					
+						<div style="width: 100%; float: left; border: 0px solid red; margin-top: 20px">
+							
+							<h:link value="voltar" outcome="index" styleClass="link-default" />
+						
+						</div>
+						
+					</div>
+					</center>	
+				
+				</div>
+				
+ 			</ui:define>
+ 
+    	</ui:composition>  
+	
+    </h:body>
+    
+</html>

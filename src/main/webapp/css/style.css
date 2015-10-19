@@ -1,0 +1,337 @@
+@CHARSET "ISO-8859-1";
+
+.body
+{
+	margin: 0px;
+	font-size: 14px;
+	font: 300 14px/20px "Lato",arial;
+	color: #555;
+}
+
+
+
+.div-header
+{
+	background: #FFF;
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+.div-header-content
+{
+	display: table;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+
+
+
+.div-content
+{
+	background: #FFF;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.div-content-content
+{
+	display: table;
+	font-size: 13px;
+	text-align: left;
+	min-height: 575px;
+}
+
+
+
+.div-footer
+{
+	width: 100%;
+	background: #f8f8f8;
+    border-top: 1px solid #e4e4e4;
+	bottom: 0;
+}
+
+.div-footer-content
+{
+	display: table;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 10px;
+	font-family: Helvetica;
+}
+
+
+
+.div-how-stuff-works, .div-about, .my-ebay{ margin-top: 150px; border: 0px solid red; display: table; text-align: left;}
+
+.div-messages{ margin-top: 125px; border: 0px solid red; display: table; width: 70%}
+
+
+
+a { color: #3079ed; text-decoration: none; float: left; margin-top: 5px }
+
+a:hover { text-decoration: underline; }
+
+.link-menu { text-decoration: none; float: left; color: #404040; margin-top: 0px;}
+
+.link-menu:hover { text-decoration: underline; }
+
+.link-help, .link-default { margin-left: 2px;}
+
+.link-logo { color: red; text-decoration: none; letter-spacing: -0.1em; font: 400 14px/20px "Lato",arial; font-size: 36px; }
+
+.link-logo:hover { text-decoration: none !important; }
+
+.link-login { text-decoration: none; padding-left: 12px !important; padding-right: 12px !important; padding-top: 4px !important; padding-bottom: 4px !important; float: right; height: 20px !important}
+
+.link-login:hover { text-decoration: none !important; }
+
+
+
+.image-user{ border-radius: 100%; box-shadow: 0px 0px 2px rgba(0,0,0,0.2); float: right; width: 35px; height: 35px; }
+
+
+
+.label-input-search{ font-size: 22px; }
+
+.label-default{ float: left; font-weight: bold; }
+
+
+
+.select-default{ height: 38px; width: 100%; font: 300 14px/20px "Lato",arial; padding-left: 10px; padding-right: 10px; border: 1px solid #d9d9d9; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.07)}
+
+
+/* width: 888px */
+.input-default{ height: 38px; width: 92%; font: 300 14px/20px "Lato",arial; padding-left: 10px; padding-right: 10px; border: 1px solid #d9d9d9; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.07); margin-top: 3px; margin-bottom: 10px; }
+.input-search{ height: 41px; font: 300 14px/20px "Lato",arial; padding-left: 10px; padding-right: 10px; border: 1px solid #d9d9d9; box-shadow: 0 1px 2px rgba(0,0,0,0.07); float: left;}
+
+
+
+.button-go-to-login
+{
+	background: #f8f8f8;
+	border: 1px solid #c6c6c6;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    cursor: default;
+    color: #757575;
+    text-decoration: none;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+}
+
+.button-go-to-login:hover
+{
+	text-decoration: none;
+	border: 1px solid #c6c6c6;
+	color: #757575;
+}
+
+
+
+.button-login-facebook
+{
+	background-color: #3b5998;
+	
+	background-repeat: no-repeat;	
+    background-image: url('http://localhost:8080/web/facebook-icon-16x16');
+    background-position: left 32px center;
+    
+	border: 1px solid #3b5998;
+    border-radius: 2px;
+    
+    color: #FFF;
+    cursor: pointer;
+	
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica;
+	
+	width: 100%;
+	height: 45px;
+		
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	
+	padding-left: 20px;
+	padding-right: 20px; 
+	
+	box-shadow: 0 3px 2px rgba(0,0,0,0.07);
+}
+
+
+
+.button-search
+{	
+	background-color: #4d90fe;
+	background-image: url('http://localhost:8080/web/search-icon-20x20');
+    background-position: left 8px center;
+    background-repeat: no-repeat;
+	
+	float: left;
+
+	border: 1px solid #4d90fe;
+	    
+    color: #FFF;
+    cursor: pointer;
+	
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica;
+	
+	height: 45px;
+		
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	
+	padding-left: 20px;
+	padding-right: 18px; 
+}
+
+.button-search:hover
+{
+	background-color: #0063d1;
+	border: 1px solid #0063d1;
+}
+
+
+
+.button-default
+{	
+	background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+	border: 1px solid #3079ed;
+    border-radius: 2px;
+    
+    color: #FFF;
+    cursor: pointer;
+	
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica;
+	
+	height: 40px;
+	
+	width: 101.4% !important;
+	margin-top: 10px;
+		
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	
+	padding-left: 20px;
+	padding-right: 20px; 
+	
+	box-shadow: 0 3px 2px rgba(0,0,0,0.07);
+}
+
+.button-default:hover
+{
+	background-color: #0063d1;
+	border: 1px solid #0063d1;
+	background-image: -webkit-linear-gradient(top,#0063d1,#00509d);
+}
+
+
+
+h1
+{
+    font-family: 'Open Sans', arial;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: -8px;
+    line-height: 1.5em;
+}
+
+
+
+h2
+{
+    font-family: 'Open Sans', arial;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+}
+
+
+
+h3
+{
+    font-family: 'Open Sans', arial;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+}
+
+
+
+.text-how-stuff-works
+{
+	font-size: 14px;
+}
+
+
+
+.form-search
+{
+	margin-top: 15px;
+	display: table;
+}
+
+
+
+.form-default
+{
+	background: #f8f8f8;
+    width: 240px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 1px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+
+*:focus {
+    outline: 0;
+}
+
+
+@media screen and (max-width: 900px)
+{	
+	.div-header-content{width: 95%; border: 0px solid red}
+	.div-content-content{width: 95%; border: 0px solid red}
+	.div-footer-content{width: 95%; border: 0px solid red}
+	
+	.input-search{width: 245px}
+}
+
+@media screen and (min-width: 901px)
+{	
+	.div-header-content{width: 90%; border: 0px solid red;}
+	.div-content-content{width: 90%; border: 0px solid red}
+	.div-footer-content{width: 90%; border: 0px solid red}
+	
+	.input-search{width: 720px}
+}

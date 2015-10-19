@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"    
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    
+    <h:body>
+    
+    	<ui:composition template="/template/template.xhtml">
+ 
+ 			<ui:define name="content">
+
+				<div id="div-content-content" class="div-content-content">
+																
+					<center>
+													
+						<h:form id="form-register-pessoal-data" styleClass="form-default" rendered="#{!registerMB.companyData}">
+							
+							<h3 style="font-weight: bold;">Cadastre-se agora!</h3>
+							
+							<br/>
+						
+							<h:outputLabel id="label-name" for="name" value="nome:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="name" maxlength="30" styleClass="input-default"/>
+							
+							<br/><br/>
+						
+							<h:outputLabel id="label-email" for="email" value="e-mail:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="email" maxlength="50" styleClass="input-default"/>
+							
+							<br/><br/>
+							
+							<h:outputLabel id="label-password" for="password" value="senha:" styleClass="label-default"/>
+							<br/>
+							<h:inputSecret id="password" maxlength="8" styleClass="input-default"/>
+							
+							<br/>
+														
+							<h:commandButton value="Cadastrar" styleClass="button-default button-login"/>
+							
+						</h:form>
+																										
+					</center>
+															
+				</div>
+				
+ 			</ui:define>
+ 
+    	</ui:composition>  
+	
+    </h:body>
+    
+</html>

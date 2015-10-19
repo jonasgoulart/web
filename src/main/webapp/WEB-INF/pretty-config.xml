@@ -1,0 +1,74 @@
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.3
+    http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.3.xsd">
+
+    <rewrite match="^/(.*)/$" substitute="/$1" redirect="301" />
+    
+    <url-mapping id="index">
+         <pattern value="/index" />
+         <view-id value="/pages/index.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="login">
+         <pattern value="/login" />
+         <view-id value="/pages/login.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="how-stuff-works">
+         <pattern value="/how-stuff-works" />
+         <view-id value="/pages/how-stuff-works.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="my-account">
+         <pattern value="/my-account" />
+         <view-id value="/pages/my-account.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="sellers">
+         <pattern value="/sellers" />
+         <view-id value="/pages/sellers.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="about">
+         <pattern value="/about" />
+         <view-id value="/pages/about.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="register">
+         <pattern value="/register" />
+         <view-id value="/pages/register.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="register-partner">
+         <pattern value="/register-partner" />
+         <view-id value="/pages/register-partner.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="messages">
+         <pattern value="/messages" />
+         <view-id value="/pages/messages.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="data-request">
+         <pattern value="/data-request" />
+         <view-id value="/pages/data-request.xhtml" />
+    </url-mapping>
+    
+    
+    <url-mapping id="background">
+         <pattern value="/background" />
+         <view-id value="/images/background.jpg" />
+    </url-mapping>
+    
+    <url-mapping id="facebook-icon-16x16">
+         <pattern value="/facebook-icon-16x16" />
+         <view-id value="/images/facebook-icon-16x16.png" />
+    </url-mapping>
+    
+    <url-mapping id="search-icon-20x20">
+         <pattern value="/search-icon-20x20" />
+         <view-id value="/images/search-icon-20x20.png" />
+    </url-mapping>
+    
+</pretty-config>

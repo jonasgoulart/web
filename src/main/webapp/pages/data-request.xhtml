@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"    
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:body>
+    
+    	<ui:composition template="/template/template.xhtml">
+ 
+ 			<ui:define name="content">
+
+				<div id="div-content-content" class="div-content-content">
+							
+					<center>
+																														
+						<h:form id="form-request-zipcode" styleClass="form-default" style="margin-top: 150px" rendered="#{requestMB.displayFormRequestZipcode}">
+																						
+							<h:outputLabel id="label-zip-code" for="zip-code" value="Qual é o seu cep?" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="zip-code" value="#{requestMB.request.zipCode}" maxlength="9" onkeypress="return mascaraCep(this)" onblur="return validarValorCep(this)" styleClass="input-default">
+								<p:ajax listener="#{requestMB.loadAddress}" update="address"/>
+							</h:inputText>
+							<p:ajaxStatus>
+								<f:facet name="start">  
+        							<h:outputText value="Carregando endereço..." style="font-size: 10px; float: left; margin-left: 2px; margin-top: 2px; font-family: Helvetica"/>  
+   		 						</f:facet>
+   		 						<f:facet name="complete">
+   		 							<h:outputText id="address" value="#{requestMB.request.address}" style="font-size: 10px; float: left; text-align: left; margin-left: 2px; font-family: Helvetica"/>
+   		 						</f:facet>
+   		 					</p:ajaxStatus>   		 					
+							
+							<!--h:link value="Esqueceu o cep?" onclick="window.open('http://www.buscacep.correios.com.br/sistemas/buscacep/')" styleClass="link-help"/-->						
+																 							
+   		 					<h:commandButton value="Continuar ›" action="#{requestMB.loadFormRequestQuantity}" styleClass="button-default"/>
+   		 																																
+						</h:form>
+						
+						<h:form id="form-request-quantity" styleClass="form-default" style="margin-top: 150px" rendered="#{requestMB.displayFormRequestQuantity}">
+																						
+							<h:outputLabel id="label-quantity" for="phone" value="Qual a quantidade?" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="quantity" maxlength="3" styleClass="input-default"/>
+									 							
+   		 					<h:commandButton value="Continuar ›" action="#{requestMB.loadFormRequestContact}" styleClass="button-default"/>
+   		 					
+   		 					<h:link value="voltar" onclick="history.back()" styleClass="link-help"/>						
+   		 							 																																
+						</h:form>
+						
+						<h:form id="form-request-contact" styleClass="form-default" style="margin-top: 120px" rendered="#{requestMB.displayFormRequestContact}">
+																							
+							<h:outputLabel id="label-name" for="name" value="Seu nome: " styleClass="label-default"/>
+							<br/>
+							<h:inputText id="name" maxlength="30" styleClass="input-default"/>
+														
+							<h:outputLabel id="label-email" for="email" value="Seu e-mail:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="email" maxlength="50" styleClass="input-default"/>
+							
+							<h:outputLabel id="label-phone" for="phone" value="Seu telefone:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="phone" maxlength="13" onkeypress="return mascaraTelefone(this)" onblur="return validarValorTelefone(this)" styleClass="input-default"/>
+									 							
+   		 					<h:commandButton value="Enviar" action="#{requestMB.sendRequest}" styleClass="button-default"/>
+   		 					
+   		 					<h:link value="voltar" onclick="history.back()" styleClass="link-help"/>						
+   		 							 																																
+						</h:form>
+																										
+					</center>
+				
+				</div>
+				
+ 			</ui:define>
+ 
+    	</ui:composition>  
+	
+    </h:body>
+    
+</html>

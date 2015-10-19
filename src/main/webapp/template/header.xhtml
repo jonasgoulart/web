@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+ 
+    <h:body>
+    	  
+    	<ui:composition>
+
+			<div class="div-header-content">
+				
+				<h:link outcome="index" styleClass="link-logo">
+					<h:outputText value="G" style="color: #0063d1"/>
+					<h:outputText value="u" style="color: #e43137;"/>					
+					<h:outputText value="n" style="color: #f4ae01"/>
+					<h:outputText value="y" style="color: #85b716"/>
+				</h:link>
+				
+				<h:form id="form-menu">
+				
+					<h:link value="entrar" outcome="login" styleClass="button-go-to-login" rendered="#{(sessionScope['user']) == null}"/>
+										
+																
+        			<h:graphicImage id="image-user" value="#{sessionScope['user'].urlImage}" styleClass="image-user" rendered="#{(sessionScope['user']) != null}"/>
+							
+					<h:commandLink value="sair" action="#{loginMB.loggout}" styleClass="link-menu" style="float: right; margin-top: 8px; margin-right: 20px;" rendered="#{(sessionScope['user']) != null}"/>
+					
+					<h:outputText value="|" style="float: right; margin-top: 8px; margin-left: 10px; margin-right: 10px; color: #dedede" rendered="#{(sessionScope['user']) != null}"/>
+								
+					<h:link value="Conta" outcome="my-account" styleClass="link-menu" style="float: right; margin-top: 8px;" rendered="#{(sessionScope['user']) != null}"/>
+					
+					<h:outputText value="|" style="float: right; margin-top: 8px; margin-left: 10px; margin-right: 10px; color: #dedede" rendered="#{(sessionScope['user']) != null}"/>
+								
+					<h:link value="Vendedores" outcome="sellers" styleClass="link-menu" style="float: right; margin-top: 8px;" rendered="#{(sessionScope['user']) != null}"/>
+					
+														
+				</h:form>
+								
+			</div>
+				
+	    </ui:composition>
+    	
+    </h:body>
+    
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"    
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:body>
+    
+    	<ui:composition template="/template/template.xhtml">
+ 
+ 			<ui:define name="content">
+
+				<div id="div-content-content" class="div-content-content">
+																
+					<center>
+													
+						<h:form id="form-register-partner" style="margin-top:60px" styleClass="form-default">
+							
+							<h3 style="font-weight: bold;">Seja nosso parceiro</h3>
+							
+							<br/>
+						
+							<h:outputLabel id="label-name" for="name" value="nome:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="name" maxlength="30" styleClass="input-default"/>
+													
+							<h:outputLabel id="label-email" for="email" value="e-mail:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="email" maxlength="50" styleClass="input-default"/>
+														
+							<h:outputLabel id="label-phone" for="phone" value="telefone:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="phone" maxlength="13" onkeypress="return mascaraTelefone(this)" onblur="return validarValorTelefone(this)" styleClass="input-default"/>
+								
+							<h:outputLabel id="label-name-partner" for="name-partner" value="empresa:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="name-partner" maxlength="50" styleClass="input-default"/>
+																													
+							<h:commandButton value="Enviar" action="#{registerMB.preRegister}" styleClass="button-default button-login"/>
+						
+						</h:form>
+																				
+					</center>
+															
+				</div>
+				
+ 			</ui:define>
+ 
+    	</ui:composition>  
+	
+    </h:body>
+    
+</html>

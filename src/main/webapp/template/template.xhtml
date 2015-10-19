@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"    
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"> 
+
+    	<h:head>      
+        
+        	<title>JobsPoint - Vagas de Tecnologia em todo o Brasil!</title>
+        	<meta name="viewport" content="width=device-width, initial-scale=1"></meta> 
+        	<script type="text/javascript" src="#{facesContext.externalContext.requestContextPath}/js/scripts.js"/>
+    		<link href="#{facesContext.externalContext.requestContextPath}/css/style.css" rel="stylesheet"/>  
+    		<link href="http://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:400,300" rel="stylesheet" type="text/css"/>
+    		
+		</h:head>
+    
+    	<h:body styleClass="body">
+    	
+    		<f:view contentType="text/html; charset=ISO-8859-1">
+    	
+     		<div id="div-header" class="div-header">
+				<center> 
+				<ui:include src="/template/header.xhtml"/>
+				</center>
+			</div>
+		
+			<div id="div-content" class="div-content">
+				<center> 
+					<ui:insert name="content"/>
+				</center> 
+			</div>
+
+			<div id="div-footer" class="div-footer">
+				<center> 
+					<ui:include src="/template/footer.xhtml"/>
+				</center>
+			</div>
+			
+			</f:view>
+
+    	</h:body>
+    
+</html>
