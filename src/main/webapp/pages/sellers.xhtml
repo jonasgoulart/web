@@ -21,7 +21,28 @@
 							
 					<center>
 					
+						<h:form id="form-new-seller" style="margin-top: 120px" styleClass="form-default">
 						
+							<h:outputLabel id="label-name" for="name" value="nome:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="name" maxlength="30" styleClass="input-default"/>
+													
+							<h:outputLabel id="label-email" for="email" value="e-mail:" styleClass="label-default"/>
+							<br/>
+							<h:inputText id="email" maxlength="50" styleClass="input-default"/>
+							
+							<h:outputLabel id="label-category" for="categories" value="categorias:" styleClass="label-default"/>
+							<br/>						
+							<br/>
+							<h:selectManyCheckbox id="categories" layout="pageDirection" style="float: left">
+								<f:selectItem itemLabel="Autopeças" itemValue="" itemDescription="fefef"/>
+								<f:selectItem itemLabel="Informática" itemValue=""/>
+								<f:selectItem itemLabel="Telefonia" itemValue=""/>
+							</h:selectManyCheckbox>
+																											
+							<h:commandButton value="Continuar ›" styleClass="button-default button-login"/>
+							
+						</h:form>
 					
 					</center>
 					
