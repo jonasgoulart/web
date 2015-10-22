@@ -27,6 +27,11 @@
          <mapping class="br.com.web.domain.UserCompany"/>
          <mapping class="br.com.web.domain.Company"/>
          
+         <mapping class="br.com.web.domain.Product"/>
+         <mapping class="br.com.web.domain.ProductType"/>
+         <mapping class="br.com.web.domain.Manufacturer"/>
+         <mapping class="br.com.web.domain.Category"/>
+         
      </session-factory>
      
  </hibernate-configuration>
